@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #24508C;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-image: linear-gradient(white, rgb(48, 48, 48));
+    width: 1000px;
+    margin: 20px auto 0 auto;
+    padding: 20px 20px 16px 20px;
+    border-radius: 20px 20px 0 0;
+}
+
+/* |||||||||||||||||||||||||||||||| INICIO BARRA |||||||||||||||||||||||||||||||| */
+#barra{
+    background-color: black;
+    width: 1000px;
+    height: 61px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#barra ul{
+    display: inline-flex;
+}
+
+#barra ul li{
+    list-style: none;
+}
+
+#barra ul li a{
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: lighter;
+    color: white;
+    padding: 20px;
+}
+
+#barra ul li a:hover{
+    background: #006699;
+}
+
+.submenu{
+    display: none;
+    background-color: black;
+}
+
+.submenu a{
+    text-align: left;
+}
+
+#barra ul li:hover .submenu{
+    display: block;
+    position: absolute;
+}
+
+#barra ul li:hover .submenu ul{
+    display: block;
+}
+/* |||||||||||||||||||||||||||||||| FIN BARRA |||||||||||||||||||||||||||||||| */
+
+main{
+    margin: 0 auto;
+    width: 1000px;
+    background-color: white;
+}
+
+section{
+    width: 1000px;
+    background: white;
+    margin: -3.71px auto;
+    overflow: hidden;
+}
+
+/* |||||||||||||||||||||||||||||||| LISTA LATERAL |||||||||||||||||||||||||||||||| */
+article{
+    float: left;
+    background-color: #979494;
+    width: 300px;
+    height: 700px;
+}
+
+article ul{
+    list-style: none;
+}
+
+article a{
+    width: 280px;
+    margin: 10px 10px 0;
+    background-color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    display: inline-flex;
+    font-size: 18px;
+    padding: 12px 10px;
+}
+
+article li a p{
+    margin: 2px 0 0 10px;
+}
+
+article a:hover{
+    background-color: #323656;
+}
+/* |||||||||||||||||||||||||||||||| FIN LISTA LATERAL |||||||||||||||||||||||||||||||| */
+
+aside{
+    background-color: #E4E1E1;
+    float: left;
+    width: 700px;
+    height: 700px;
+    padding: 15px;
+}
+
+aside h2{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 30px;
+}
+
+#frame{
+    float: left;
+    border: 1px solid #CCCCCC;
+    background: #E4E1E1;
+    padding: 5px 5px ;
+    margin: 0 10px 0 0;
+}
+
+#frame img{
+    width: 250px;
+}
+
+aside p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+/* INICIO FOOTER */
+footer{
+    width: 1000px;
+    margin: 0 auto 20px auto;
+    background-color: black;
+    border-radius: 0 0 20px 20px;
+}
+
+footer p{
+    text-align: center;
+    color: white;
+    padding: 25px;
+    font-size: 18px;
+}
