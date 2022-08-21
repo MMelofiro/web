@@ -28,12 +28,18 @@ header{
     display: inline-flex;
 }
 
+#redes a{
+    text-align: center;
+    margin: 15px 0 0 20px;
+}
+
 #redes img{
     width: 30px;
     height: 30px;
     border-radius: 15px;
-    margin: 15px 0 0 20px;
     box-shadow: 2px 0 0 white;
+    display: block;
+    margin: 0 auto;
 }
 /* |||||||||||||||||||||||||||||||||||| FIN HEADER |||||||||||||||||||||||||||||||||||| */
 
@@ -168,7 +174,7 @@ footer p{
     margin-bottom: 8px;
 }
 
-/* |||||||||||||||||||||||||||||||||||| MEDIA QUERY |||||||||||||||||||||||||||||||||||| */
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||| MEDIA QUERY ||||||||||||||||||||||||||||||||||||||||||||||||||| */
 @media screen and (max-width: 910px){
 
     /* ||||||||||||||| HEADER ||||||||||||||| */
@@ -184,6 +190,13 @@ footer p{
     
     #redes{
         float: right;
+        margin-top: -3px;
+    }
+
+    #redes img{
+        width: 36px;
+        height: 36px;
+        border-radius: 18px;
     }
     /* ||||||||||||||| FIN HEADER ||||||||||||||| */
 
