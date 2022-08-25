@@ -68,11 +68,6 @@ input[type="submit"], input[type="reset"]{
     padding: 1px 5px;
 }
 
-input{
-    background-color: white;
-}
-
-
 
 @media only screen and (max-width: 900px){
 
@@ -83,6 +78,10 @@ input{
     input[type="submit"], input[type="reset"]{
         width: 100%;
         font-weight: 600;
+    }
+
+    input{
+        background-color: white;
     }
 
 }
@@ -102,6 +101,10 @@ input{
         transform: none;
     }
 
+    input{
+        background-color: white;
+    }
+
 }
 
 @media only screen and (max-width: 500px){
@@ -119,6 +122,10 @@ input{
         top: auto;
         left: auto;
         transform: none;
+    }
+
+    input{
+        background-color: white;
     }
 
 }
