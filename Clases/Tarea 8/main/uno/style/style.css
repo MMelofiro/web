@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #9a9595;
+    font-family: Tahoma, Geneva, Verdana;
+    position: relative;
+    height: 100vh;
+}
+
+#formulario{
+    background-color: #b7ddf2;
+    width: 632px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    font-size: 17px;
+}
+
+p{
+    font-weight: 600;
+    font-size: 12px;
+}
+
+#complete{
+    margin: 0 0 20px;
+}
+
+hr{
+    background-color: white;
+    border: none;
+    height: 1px;
+    margin: 0 0 18px;
+}
+
+form p{
+    margin: 10px 0 0;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"]{
+    width: 100%;
+}
+
+.radio{
+    display: table;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    font-weight: 600;
+    vertical-align: -2px;
+}
+
+b{
+    font-size: 12px;
+    margin: 0 0 0px 3px;
+}
+
+input[type="submit"], input[type="reset"]{
+    margin-top: 15px;
+    padding: 1px 5px;
+}
+
+
+
+@media only screen and (max-width: 900px){
+
+    #formulario{
+        width: 80vw;
+    }
+
+    input[type="submit"], input[type="reset"]{
+        width: 100%;
+        font-weight: 600;
+    }
+
+}
+
+@media only screen and (max-height: 574px){
+
+    body{
+        height: auto;
+        position: relative;
+    }
+
+    #formulario{
+        position: relative;
+        top: auto;
+        left: auto;
+        margin: auto;
+        transform: none;
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+
+    body{
+        height: 100%;
+        background-color: #b7ddf2;
+    }
+
+    #formulario{
+        width: 100vw;
+        height: 100%;
+        padding: 20px;
+        position: absolute;
+        top: auto;
+        left: auto;
+        transform: none;
+    }
+
+}
