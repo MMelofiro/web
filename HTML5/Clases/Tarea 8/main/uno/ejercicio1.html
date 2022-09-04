@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    
+    <div id="formulario">
+
+        <h1>FORMULARIO DE REGISTRO</h1>
+
+        <p id="complete">Complete el formulario con este registro</p>
+
+        <hr>
+
+        <form action="">
+
+            <p>NOMBRES Y APELLIDOS</p>
+            <input type="text" name="" placeholder="Ingrese datos completos" maxlength="80"> 
+
+            <p>DNI</p>
+            <input type="text" name="" placeholder="Ocho caracteres" maxlength="8" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*?)\..*/g, '$1');">
+
+            <p>TELÉFONO</p>
+            <input type="tel" name="" maxlength="26" oninput="this.value = this.value.replace(/[^0-9+ ]/g, '').replace(/(\..*?)\..*/g, '$1');">
+
+            <p>ESTUDIOS REALIZADOS</p>
+            <div class="radio">
+                <input type="checkbox" name="">
+                <b>Primaria</b>
+            </div>
+
+            <div class="radio">
+                <input type="checkbox" name="">
+                <b>Secundaria</b>
+            </div>
+
+            <div class="radio">
+                <input type="checkbox" name="">
+                <b>Técnico</b>
+            </div>
+            
+            <div class="radio">
+                <input type="checkbox" name="">
+                <b>Universitario</b>
+            </div>
+
+            <p>ESTADO CIVIL</p>
+            <div class="radio">
+                <input type="radio" name="estado" id="">
+                <b>Soltero</b>
+            </div>
+
+            <div class="radio">
+                <input type="radio" name="estado" id="">
+                <b>Casado</b>
+            </div>
+
+            <div class="radio">
+                <input type="radio" name="estado" id="">
+                <b>Viudo</b>
+            </div>
+
+            <div class="radio">
+                <input type="radio" name="estado" id="">
+                <b>Divorciado</b>
+            </div>
+
+            <p>PROVINCIA</p>
+            <input type="text" maxlength="20">
+
+            <p>CORREO ELECTRÓNICO</p>
+            <input type="email" name="" id="">
+
+            <br>
+
+            <input type="submit" value="Enviar">
+
+            <input type="reset" value="Limpiar">
+
+        </form>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #00FFFF;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+#formulario{
+    width: 50%;
+    margin: 0 auto;
+    background-color: #2A2929;
+    color: white;
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"]{
+    margin: 2px 0 20px;
+    height: 40px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea{
+    width: 100%;
+    padding: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea:focus{
+    outline: 0 none;
+}
+
+textarea{
+    margin: 2px 0 10px;
+    resize: none;
+}
+
+#submit{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]{
+    font-size: 14px;
+    padding: 10px 20px;
+    background-image: linear-gradient(180deg, white, lightblue);
+    border: 0 none;
+}
+
+
+@media only screen and (max-width: 900px){
+
+    body{
+        position: relative;
+        height: 100vh;
+    }
+
+    #formulario{
+        width: 80%;
+        margin: 0 auto;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    input{
+        background-color: white;
+    }
+
+}
+
+@media only screen and (max-height: 712px){
+
+    body{
+        height: auto;
+        position: relative;
+    }
+
+    #formulario{
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+    }
+
+    input{
+        background-color: white;
+    }
+
+}
+
+
+@media screen and (max-width: 500px){
+
+    body{
+        height: auto;
+        position: relative;
+
+        background-color: #2A2929;
+    }
+
+    #formulario{
+        width: 100%;
+        margin: 0;
+
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+    }
+
+    input, textarea{
+        background-color: white;
+    }
+
+}
