@@ -17,6 +17,13 @@
     color: #071013;
 }
 
+#portafolio p{
+    text-align: center;
+    margin-top: 3%;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
 #port-block{
     width: 100%;
 }
@@ -49,6 +56,10 @@
         padding: 10% 5%;
 
         scroll-margin-block-start: 53px;
+    }
+
+    #portafolio p{
+        margin-top: 6%;
     }
 
     #portafolio h2{

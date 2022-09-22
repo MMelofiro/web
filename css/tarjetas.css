@@ -65,7 +65,15 @@
     margin: 0;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 900px){
+
+    .tarjeta{
+        margin-top: 3%;
+    }
+
+}
+
+@media only screen and (max-width: 480px){
 
     .tarj-flex{
         flex-direction: column;

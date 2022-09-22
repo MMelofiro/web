@@ -169,7 +169,7 @@ main p{
 }
 
 /* |||||||||||||||||||||| MEDIA QUERY |||||||||||||||||||||| */
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 900px){
 
     header{
         padding: 0 5vw 0;
