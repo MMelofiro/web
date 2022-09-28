@@ -1,6 +1,6 @@
 #contacto{
     background: #F8F8F8;
-    padding: 4% 5%;
+    padding: calc(4% - 10px) 5% 4% 5%;
 
     scroll-margin-block-start: 53px;
 }
@@ -91,7 +91,7 @@ input[type="submit"]:hover{
 @media only screen and (max-width: 800px){
 
     #contacto{
-        padding: 10% 5%;
+        padding: calc(10% - 10px) 5% 10% 5%;
 
         scroll-margin-block-start: 53px;
     }

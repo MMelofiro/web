@@ -37,7 +37,7 @@
 #serv-mask{
     background-color: rgba(0, 0, 0, 0.5);
     height: 100%;
-    padding: 4% 5%;
+    padding: calc(4% - 10px) 5% 4% 5%;
 }
 
 #serv-mask h2{
@@ -94,7 +94,7 @@
     }
 
     #serv-mask{
-        padding: 10% 5%;
+        padding: calc(10% - 10px) 5% 10% 5%;
     }
 
     .cuadros{

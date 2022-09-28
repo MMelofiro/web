@@ -6,8 +6,9 @@
     scroll-behavior: smooth;
 }
 
-p, hr, h1, h2, h3, h4, h5, h6{
+p, hr, h1, h2, h3, h4, h5, h6, hr{
     color: #071013;
+    padding-top: 0;
 }
 
 header{
@@ -29,7 +30,7 @@ header img{
 
 nav{
     float: right;
-    transform: translate(0, 5%);
+    transform: translate(0, 7%);
 }
 
 nav ul{
@@ -93,7 +94,7 @@ main p{
 
 #sobre{
     background: #F8F8F8;
-    padding: 4% 5%;
+    padding: calc(4% - 10px) 5% 4% 5%;
     position: relative;
     overflow: hidden;
 }
@@ -130,6 +131,7 @@ main p{
 #cv-left p{
     font-size: 1.3rem;
     font-weight: 300;
+    line-height: 1.8rem;
 }
 
 #descargar{
@@ -196,7 +198,7 @@ main p{
     }
 
     #sobre{
-        padding: 10% 5%;
+        padding: calc(10% - 10px) 5% 10% 5%;
         position: relative;
         overflow: hidden;
     }

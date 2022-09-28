@@ -1,7 +1,7 @@
 #testimonios{
     background: rgb(162,150,255);
     background: linear-gradient(135deg, rgba(162,150,255,1) 0%, rgba(47,114,255,1) 100%);
-    padding: 4% 5%;
+    padding: calc(4% - 10px) 5% 4% 5%;
 
     scroll-margin-block-start: 54px;
 }
@@ -12,6 +12,10 @@
     font-size: 2.3rem;
     font-weight: 500;
     margin-bottom: 2%;
+}
+
+#testimonios hr{
+    color: #F8F8F8;
 }
 
 #test-flex{
@@ -67,7 +71,7 @@
 @media only screen and (max-width: 800px){
 
     #testimonios{
-        padding: 10% 5%;
+        padding: calc(10% - 10px) 5% 10% 5%;
 
         scroll-margin-block-start: 53px;
     }
