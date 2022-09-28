@@ -1,0 +1,87 @@
+#testimonios{
+    background: rgb(162,150,255);
+    background: linear-gradient(135deg, rgba(162,150,255,1) 0%, rgba(47,114,255,1) 100%);
+    padding: calc(4% - 10px) 5% 4% 5%;
+
+    scroll-margin-block-start: 54px;
+}
+
+#testimonios h2{
+    color: #F8F8F8;
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 500;
+    margin-bottom: 2%;
+}
+
+#testimonios hr{
+    color: #F8F8F8;
+}
+
+#test-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.doe{
+    width: 250px;
+    text-align: center;
+    margin-top: 4%;
+}
+
+.doe img{
+    width: 250px;
+    border-radius: 50px;
+}
+
+.doe h5{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #F8F8F8;
+    margin: 4% 0 3%;
+}
+
+.doe p{
+    color: #F8F8F8;
+    font-weight: 300;
+}
+
+.doe-red{
+    display: block;
+    margin-top: 7%;
+}
+
+.doe-red .fa-brands{
+    text-decoration: none;
+    color: #F8F8F8;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.linkedin{
+    margin: 0 8%;
+}
+
+.doe-red .fa-brands:hover{
+    color: #0CCE6B;
+    transition: all 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 800px){
+
+    #testimonios{
+        padding: calc(10% - 10px) 5% 10% 5%;
+
+        scroll-margin-block-start: 53px;
+    }
+
+    #testimonios h2{
+        margin-bottom: 5%;
+    }
+
+    .doe{
+        margin-top: 15%;
+    }
+
+}

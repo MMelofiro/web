@@ -1,0 +1,135 @@
+#contacto{
+    background: #F8F8F8;
+    padding: calc(4% - 10px) 5% 4% 5%;
+
+    scroll-margin-block-start: 53px;
+}
+
+#contacto h2{
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 1.3%;
+    font-weight: 500;
+}
+
+#cont-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2.5%;
+}
+
+#contacto img{
+    width: 60%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#infor{
+    width: 38%;
+    background: #E0E1DD;
+    padding: 2%;
+    border-radius: 5px;
+    border: 1px solid #656565;
+}
+
+#infor h6{
+    color: #071013;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#infor p{
+    font-weight: 500;
+    color: #071013;
+    margin-top: 4%;
+}
+
+input[type="text"], input[type="email"]{
+    height: 30px;
+}
+
+input[type="text"], input[type="email"], textarea{
+    width: 100%;
+    margin-top: 2%;
+    border-radius: 5px;
+    padding: 1% 1.5%;
+    border: 0 none;
+    background-color: #F8F8F8;
+    color: #071013;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
+    outline: 0 none;
+}
+
+textarea{
+    resize: none;
+}
+
+input[type="submit"]{
+    font-size: 0.9rem;
+    margin-top: 6%;
+    padding: 15px 30px;
+    border: none;
+    font-weight: 500;
+    background-color: #0CCE6B;
+    color: #F8F8F8;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.1s ease-in-out;
+    border-radius: 3px;
+}
+
+input[type="submit"]:hover{
+    background-color: #FF3B3B;
+    color: #F8F8F8;
+    transition: all 0.1s ease-in-out;
+}
+
+@media only screen and (max-width: 800px){
+
+    #contacto{
+        padding: calc(10% - 10px) 5% 10% 5%;
+
+        scroll-margin-block-start: 53px;
+    }
+
+    #contacto h2{
+        margin-bottom: 5%;
+    }
+
+    #contacto img{
+        width: 100%;
+    }
+
+    #infor{
+        width: 100%;
+        background: transparent;
+        padding: 2%;
+        border-radius: 5px;
+        border: 0 none
+    }
+
+    #cont-flex img, #infor{
+        margin-top: 10%;
+    }
+
+    #infor p {
+        font-weight: 500;
+        color: #071013;
+        margin-top: 7%;
+    }
+
+    input[type="text"], input[type="email"], textarea{
+        margin-top: 4%;
+        border: 1px solid #071013;
+        background-color: white;
+    }
+
+    input[type="submit"]{
+        margin-top: 15%;
+    }
+
+}
