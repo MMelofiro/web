@@ -28,6 +28,14 @@
     width: 250px;
     text-align: center;
     margin-top: 4%;
+    
+}
+
+.doe-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 137.5px;
 }
 
 .doe img{
@@ -82,6 +90,14 @@
 
     .doe{
         margin-top: 15%;
+    }
+
+}
+
+@media only screen and (max-width: 555px){
+
+    .doe-flex{
+        height: auto;
     }
 
 }

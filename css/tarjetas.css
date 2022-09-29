@@ -54,7 +54,7 @@
 .cont-tarj p{
     color: #F8F8F8;
     font-size: 200%;
-    font-weight: 300;
+    font-weight: 100;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -69,6 +69,12 @@
 
     .tarjeta{
         margin-top: 3%;
+    }
+
+    .tarjeta img{
+        width: 100%;
+        height: 170px;
+        object-fit: cover;
     }
 
 }

@@ -81,7 +81,8 @@ main h1{
 
 main p{
     width: 600px;
-    font-weight: 300;
+    font-size: 1.8rem;
+    font-weight: 100;
     line-height: 25px;
     color: #F8F8F8;
     margin: 10px auto;
@@ -187,9 +188,7 @@ main p{
 
     main p{
         padding: 0 5%;
-        display: flex;
         width: 100%;
-        flex-wrap: wrap;
     }
 
     /* SOBRE MÍ */

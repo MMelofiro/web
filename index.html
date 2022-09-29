@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/menu.css">
 
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;600;700;900&display=swap');
     </style>
@@ -36,7 +38,7 @@
        <!--Fin del Menu Hamburguesa-->
 
         <nav>
-            <ul>
+            <ul class="navigation">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#mi">Sobre mí</a></li>
                 <li><a href="#servicios">Servicios</a></li>
@@ -45,6 +47,14 @@
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
+
+        <script>
+
+            $("nav a").click(function () {
+                $('#check').prop('checked', false);
+            });
+
+        </script>
 
     </header>
 
@@ -56,7 +66,7 @@
 
             <h1>Marcello Melofiro</h1>
 
-            <p>Diseñador y Desarrollador Web</p>    
+            <p>Diseñador y Desarrollador Web</p>
 
         </div>
 
@@ -290,60 +300,72 @@
 
                 <div class="doe">
 
-                    <img src="https://miguelpallin.com/img/testimonio1.jpg" alt="">
+                    <img src="imagenes/test2.jpg" alt="">
         
-                    <h5>Jane Doe</h5>
+                    <h5>Irina Garrido</h5>
         
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus vulputate elit, egestas aliquet quam. Vivamus pulvinar in orci egestas mattis.</p>
+                    <div class="doe-flex">
+
+                        <p>"Me encantó su trabajo, muy puntual y paciente con mis requerimientos. Lo recomiendo"</p>
                     
-                    <div class="doe-red">
-        
-                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-        
-                        <a href="https://www.linkedin.com/" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
-        
-                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-        
+                        <div class="doe-red">
+            
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            
+                            <a href="https://www.linkedin.com/" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+            
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            
+                        </div>
+
                     </div>
         
                 </div>
         
                 <div class="doe">
         
-                    <img src="https://miguelpallin.com/img/testimonio2.jpg" alt="">
+                    <img src="imagenes/test1.jpg" alt="">
         
-                    <h5>Jhon Doe</h5>
+                    <h5>José Delgado</h5>
         
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus vulputate elit, egestas aliquet quam. Vivamus pulvinar in orci egestas mattis.</p>
+                    <div class="doe-flex">
+
+                        <p>"Cumplió con el trabajo en el tiempo acordado. He quedado muy contento la página web que realizó, cumplió mis espectativas y está muy bien trabajada."</p>
                     
-                    <div class="doe-red">
-        
-                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-        
-                        <a href="https://www.linkedin.com/" class="linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        
-                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-        
+                        <div class="doe-red">
+            
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            
+                            <a href="https://www.linkedin.com/" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+            
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            
+                        </div>
+
                     </div>
         
                 </div>
-        
+
                 <div class="doe">
         
-                    <img src="https://miguelpallin.com/img/testimonio3.jpg" alt="">
+                    <img src="imagenes/test3.png" alt="">
         
-                    <h5>Irene Doe</h5>
+                    <h5>Miguel Pallin</h5>
         
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus vulputate elit, egestas aliquet quam. Vivamus pulvinar in orci egestas mattis.</p>
+                    <div class="doe-flex">
+
+                        <p>"Es un alumno aplicado y con muchas de aprender, siempre atento y pregutando sobre los temas de la web."</p>
                     
-                    <div class="doe-red">
-        
-                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-        
-                        <a href="https://www.linkedin.com/" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
-        
-                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-        
+                        <div class="doe-red">
+            
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            
+                            <a href="https://www.linkedin.com/" class="linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            
+                        </div>
+
                     </div>
         
                 </div>

@@ -2,7 +2,7 @@
     display: none;
 }
 #check:checked ~ nav{
-    left: 0%;
+    left: 0;
     transition: 0.5s ease-out;
 }
 
@@ -18,22 +18,25 @@
     }
 
     nav{
-        float: none;
-        position: relative;
-        left: -150%;
-        transition: 0.5s ease-out;
-        top: -71px;
+        display: block;
+        position: fixed;
+        left: 100%;
+        
+        top: 54px;
+        bottom: 0;
+        overflow-x: hidden;
+        overflow-y: scroll;
         width: 100vw;
+        transition: 0.5s ease-out;
+        background: #F8F8F8;
+        z-index: 1;
 
-        transform: translate(-8%, 0);
+        transform: translate(0);
     }
 
     nav ul{
-        position: absolute;
-        width: 106.4%;
         flex-direction: column;
-        background: #F8F8F8;
-        top: 70px;
+        
         text-align: center;
     }
 
