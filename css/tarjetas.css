@@ -65,7 +65,11 @@
     margin: 0;
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (hover: none){
+
+    .cont-tarj{
+        transform: translateX(0%);
+    }
 
     .tarjeta{
         margin-top: 3%;
