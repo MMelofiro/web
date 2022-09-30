@@ -1,0 +1,14 @@
+header{
+    background: url(../imgs/banner.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.overlay{
+    background: rgba(45, 52, 54, 0.5);
+}
+
+.parallax{
+    background: url(../imgs/Sac2.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
