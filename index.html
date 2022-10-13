@@ -4,98 +4,451 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML5 y CSS3</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Marcello Melofiro</title>
+    <link rel="shortcut icon" href="imagenes/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tarjetas.css">
+    <link rel="stylesheet" href="css/servicios.css">
+    <link rel="stylesheet" href="css/porta.css">
+    <link rel="stylesheet" href="css/testi.css">
+    <link rel="stylesheet" href="css/cont.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/menu.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;600;700;900&display=swap');
     </style>
 </head>
-    
+
 <body>
-    
-    <h1>HTML5 y CSS3</h1>
-    
-    <main>
 
-        <a href="Clases/Tarea 1/index.html">
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/7f5269cfd1.js" crossorigin="anonymous"></script>
+    <!-- FONTAWESOME -->
 
-            <p>Sesión 1</p>
+    <header>
 
-            <img src="pics/1.png" alt="">
+        <img src="https://miguelpallin.com/img/persona.png" alt="">
 
-        </a>
+        <!--Menu Hamburguesa-->
+       <label class="fa-solid fa-bars" id="menu" for="check"></label>
+       <input type="checkbox" name="" id="check">
+       <!--Fin del Menu Hamburguesa-->
 
-        <a href="Clases/Tarea 2/index.html">
+        <nav>
+            <ul class="navigation">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#mi">Sobre mí</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
 
-            <p>Sesión 2</p>
+        <script>
 
-            <img src="pics/2.png" alt="">
+            $("nav a").click(function () {
+                $('#check').prop('checked', false);
+            });
 
-        </a>
+        </script>
 
-        <a href="Clases/Tarea 3/index.html">
+    </header>
 
-            <p>Sesión 3</p>
+    <main id="inicio">
 
-            <img src="pics/3.png" alt="">
+        <div id="main-cont">
 
-        </a>
+            <img src="imagenes/avatar.png" alt="">
 
-        <a href="Clases/Tarea 4/index.html">
+            <h1>Marcello Melofiro</h1>
 
-            <p>Sesión 4</p>
+            <p>Diseñador y Desarrollador Web</p>
 
-            <img src="pics/4.png" alt="">
-
-        </a>
-
-        <a href="Clases/Tarea 5/index.html">
-
-            <p>Sesión 5</p>
-
-            <img src="pics/5.png" alt="">
-
-        </a>
-
-        <a href="Clases/Tarea 6/index.html">
-
-            <p>Sesión 6</p>
-
-            <img src="pics/6.png" alt="">
-
-        </a>
-
-        <a href="Clases/Tarea 7/index.html">
-
-            <p>Sesión 7</p>
-
-            <img src="pics/7.png" alt="">
-
-        </a>
-
-        <a href="Clases/Tarea 8/index.html">
-
-            <p>Sesión 8</p>
-
-            <img src="pics/8.png" alt="">
-
-        </a>
-
-        <a href="Clases/Tarea 9/index.html">
-
-            <p>Sesión 9</p>
-
-            <img src="pics/9.png" alt="">
-
-        </a>
+        </div>
 
     </main>
 
+    <div id="mi"></div>
+
+    <div id="sobre">
+
+        <div id="cv">
+
+            <h2>SOBRE MÍ</h2>
+
+            <hr>
+
+        </div>
+
+        <div id="sobre-flex">
+
+            <div id="cv-left">
+
+                <div id="cv-txt">
+
+                    <p>
+                        Soy un desarrollador web con años de experiencia en el campo de la informática. Me he especializado en el desarrollo web y el diseño gráfico, sin embargo, poseo conocimientos avanzados en la edición de imágenes y videos, animación flash, y ofimática.
+                        <br>
+                        Entre los programas que utilizo se incluyen Adobe Illustrator, Premiere Pro, InDesign, Animate, Photoshop y Corel Draw.
+                    </p>
+
+                </div>
+    
+                <div id="descargar">
+
+                    <a href="">Descargar Curriculum</a>
+
+                </div>
+    
+            </div>
+    
+            <div id="espec">
+    
+                <h3>ESPECIALIDADES</h3>
+    
+                <div id="espec-tar">
+    
+                    <div class="tarj-flex" id="tarj-flex-arr">
+
+                        <div class="tarjeta derecha">
+    
+                            <img src="imagenes/diseñogra.jpg" alt="">
+        
+                            <div class="cont-tarj">
+        
+                                <p>DISEÑO GRÁFICO DIGITAL</p>
+        
+                            </div>
+        
+                        </div>
+        
+                        <div class="tarjeta">
+        
+                            <img src="imagenes/photo.jpg" alt="">
+        
+                            <div class="cont-tarj cont-izq">
+        
+                                <p>EDICIÓN DE IMAGEN</p>
+        
+                            </div>
+        
+                        </div>
+
+                    </div>
+    
+                    <div class="tarj-flex">
+
+                        <div class="tarjeta derecha">
+    
+                            <img src="imagenes/web.jpg" alt="">
+        
+                            <div class="cont-tarj">
+        
+                                <p>DISEÑO Y DESARROLLO WEB</p>
+        
+                            </div>
+        
+                        </div>
+        
+                        <div class="tarjeta">
+        
+                            <img src="imagenes/video.jpg" alt="">
+        
+                            <div class="cont-tarj cont-izq">
+        
+                                <p>EDICIÓN DE VIDEO</p>
+        
+                            </div>
+
+                        </div>
+    
+                    </div>
+    
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="servicios">
+
+        <div id="serv-mask">
+
+            <h2>SERVICIOS</h2>
+
+            <hr>
+
+            <div id="serv-block">
+
+                <div id="serv-flex">
+
+                    <div class="cuadros">
+                        <i class="fa-solid fa-bullseye"></i>
+            
+                        <p class="cuad-marg"><span class="cuad-titu">Branding</span></p>
+                        <p>Creamos tu marca. Nos encargamos que tu página refleje tu empresa.</p>
+                    </div>
+            
+                    <div class="cuadros">
+                        <i class="fa-solid fa-desktop"></i>
+            
+                        <p class="cuad-marg"><span class="cuad-titu">Desarrollo</span></p>
+                        <p>Diseño y desarrollo web que brinda la mejor experiencia al consumidor.</p>
+                    </div>
+            
+                    <div class="cuadros">
+                        <i class="fa-solid fa-handshake-simple"></i>
+            
+                        <p class="cuad-marg"><span class="cuad-titu">Confianza</span></p>
+                        <p>Trabajamos mano a mano con nuestros clientes para asegurar los mejores resultados.</p>
+                    </div>
+            
+                    <div class="cuadros">
+                        <i class="fa-solid fa-calendar-days"></i>
+            
+                        <p class="cuad-marg"><span class="cuad-titu">Puntualidad</span></p>
+                        <p>Entregamos tus pedidos a tiempo. Los periodos también son negociables.</p>
+                    </div>
+            
+                    <div class="cuadros">
+                        <i class="fa-solid fa-sliders"></i>
+            
+                        <p class="cuad-marg"><span class="cuad-titu">Edición</span></p>
+                        <p>Edición profesional de fotos y videos, para tu negocio o empresa.</p>
+                    </div>
+            
+                    <div class="cuadros">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+            
+                        <p class="cuad-marg"><span class="cuad-titu">Profesionalidad</span></p>
+                        <p>Los detalles importan. Trabajamos para entregar productos profesionales.</p>
+                    </div>
+    
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="portafolio">
+
+        <h2>PORTAFOLIO</h2>
+
+        <hr>
+
+        <p>Haga click en la imagen del trabajo que desea ver.</p>
+
+        <div id="port-block">
+
+            <div class="port-flex">
+
+                <a href="HTML5/index.html">
+                    <img src="imagenes/portafolio/port1.png" alt="">
+                </a>
+        
+                <a href="tarea1/index.html">
+                    <img src="imagenes/portafolio/port2.png" alt="">
+                </a>
+                
+                <a href="tarea2/index.html">
+                    <img src="imagenes/portafolio/port3.png" alt="">
+                </a>
+
+                <a href="bootstrap/index.html">
+                    <img src="imagenes/portafolio/bootstrap.png" alt="">
+                </a>
+        
+                <a href="tarea3/index.html">
+                    <img src="imagenes/portafolio/port4.png" alt="">
+                </a>
+        
+                <a href="tarea4/index.html">
+                    <img src="imagenes/portafolio/port5.png" alt="">
+                </a>
+        
+                <a href="tarea5/index.html">
+                    <img src="imagenes/portafolio/port6.png" alt="">
+                </a>
+        
+                <a href="tarea6/index.html">
+                    <img src="imagenes/portafolio/port7.png" alt="">
+                </a>
+        
+                <a href="tarea7/index.html">
+                    <img src="imagenes/portafolio/port8.png" alt="">
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="testimonios">
+
+        <h2>TESTIMONIOS</h2>
+
+        <hr>
+
+        <div id="test-block">
+
+            <div id="test-flex">
+
+                <div class="doe">
+
+                    <img src="imagenes/test2.jpg" alt="">
+        
+                    <h5>Irina Garrido</h5>
+        
+                    <div class="doe-flex">
+
+                        <p>"Me encantó su trabajo, muy puntual y paciente con mis requerimientos. Lo recomiendo."</p>
+                    
+                        <div class="doe-red">
+            
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            
+                            <a href="https://www.linkedin.com/" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+            
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            
+                        </div>
+
+                    </div>
+        
+                </div>
+        
+                <div class="doe">
+        
+                    <img src="imagenes/test1.jpg" alt="">
+        
+                    <h5>José Delgado</h5>
+        
+                    <div class="doe-flex">
+
+                        <p>"Cumplió con el trabajo en el tiempo acordado. He quedado muy contento la página web que realizó, cumplió mis espectativas y está muy bien trabajada."</p>
+                    
+                        <div class="doe-red">
+            
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            
+                            <a href="https://www.linkedin.com/" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+            
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            
+                        </div>
+
+                    </div>
+        
+                </div>
+
+                <div class="doe">
+        
+                    <img src="imagenes/test3.png" alt="">
+        
+                    <h5>Miguel Pallin</h5>
+        
+                    <div class="doe-flex">
+
+                        <p>"Es un alumno aplicado y con muchas de aprender, siempre atento y pregutando sobre los temas de la web."</p>
+                    
+                        <div class="doe-red">
+            
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            
+                            <a href="https://www.linkedin.com/" class="linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            
+                        </div>
+
+                    </div>
+        
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="contacto">
+
+        <h2>CONTACTO</h2>
+
+        <hr>
+
+        <div id="cont-flex">
+
+            <img src="imagenes/contac_ros.png" alt="">
+
+            <div id="infor">
+
+                <h6>INFORMES</h6>
+
+                <p>Consulta para más información.</p>
+
+                <form action="">
+
+                    <p>Nombre Completo*</p>
+                    <input type="text" name="" id="form-nom" maxlength="80" placeholder="Ingrese su nombre completo" required>
+
+                    <p>Correo Electrónico*</p>
+                    <input type="email" name="" id="form-mail" maxlength="100" placeholder="Ingrese su correo electrónico" required>
+
+                    <p>Teléfono</p>
+                    <input type="text" id="form-tel" placeholder="Ingrese su número telefónico" maxlength="26" oninput="this.value = this.value.replace(/[^0-9+ ]/g, '').replace(/(\..*?)\..*/g, '$1');">
+
+                    <p>Consulta*</p>
+                    <textarea name="" id="form-cons" cols="30" rows="10" maxlength="750" required></textarea>
+
+                    <br>
+
+                    <input type="submit" value="Enviar">
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
     <footer>
-        <p>Copyright&copy; Marcello Melofiro</p>
+
+        <div class="foot-bloq">
+            
+            <p class="nodo">
+                &copy; Marcello Melofiro.
+                <br>
+                Página creada y desarrollada por Marcello Melofiro.
+            </p>
+
+        </div>
+
+        <div class="foot-bloq" id="dona">
+
+            <p>Pide mi plantilla web con un donativo.</p>
+
+            <a href="https://www.paypal.com/donate/?hosted_button_id=Q6NZHPEEBSN9A"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt=""></a>
+
+        </div>
+
+        <div class="foot-bloq">
+
+            <p class="nodo">Marcello Melofiro | Programador y diseñador web</p>
+
+        </div>
+
     </footer>
-    
+
 </body>
-    
 </html>
