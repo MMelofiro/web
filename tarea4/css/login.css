@@ -1,0 +1,92 @@
+body{
+    background-color: #7F7F7F;
+}
+
+/* Header */
+header{
+    width: 100%;
+    padding: 0 2%;
+    height: 60px;
+    background: none;
+}
+
+header img{
+    width: 70px;
+    transform: translate(0, -5%);
+}
+
+header nav{
+    float: right;
+    transform: translate(0, 108%);
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+}
+
+header li{
+    padding: 0 0 0 40px;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--blan);
+}
+
+header a:hover{
+    text-shadow: 0px 0px 3px var(--blan);
+}
+
+/* Iniciar sesión */
+main{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-align: center;
+}
+
+aside{
+    background-color: var(--azul);
+    padding: 3% 1%;
+}
+
+aside img{
+    width: 25%;
+}
+
+form p{
+    color: var(--blan);
+    margin: 0 0 2% 0;
+}
+
+form [type="text"], form [type="password"]{
+    width: 100%;
+    resize: none;
+    border: none;
+    border-radius: 2px;
+    padding: 0 1%;
+    margin: 0 0 2%;
+    color: var(--neg);
+    height: 25px;
+}
+
+form [type="text"]:focus, form [type="password"]:focus{
+    outline: 0 none;
+}
+
+form [type="submit"]{
+    border: none;
+    color: var(--neg);
+    background-color: var(--celes);
+    padding: 15px 25px;
+    width: 100%;
+    margin: 4% 0 0 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+form [type="submit"]:hover{
+    color: var(--neg);
+    background-color: var(--resalt);
+}

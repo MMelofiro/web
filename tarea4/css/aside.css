@@ -1,0 +1,29 @@
+aside{
+    background: url(../imagenes/family-home-desktop.jpg) center no-repeat;
+    background-size: cover;
+    min-height: 400px;
+}
+
+aside p{
+    color: var(--blan); /* COLOR LETRA */
+}
+
+#aside-capa{
+    background: rgba(0, 0, 0, 0.5);
+    min-height: 400px;
+    padding: 4% 4%;
+
+    /* Centrado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#aside-cent{
+    text-align: center;
+    max-width: 800px;
+}
+
+aside h1{
+    margin: 0 0 1%;
+}

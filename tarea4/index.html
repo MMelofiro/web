@@ -1,1 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Título -->
+    <title>Dental Centro</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://miguelpallin.com/Javascript%20and%20Jquery%20-%20Sesion%2006(Examen%20Parcial.)/img/favicon.png" type="image/x-icon">
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/nosotros.css">
+    <link rel="stylesheet" href="css/aside.css">
+    <link rel="stylesheet" href="css/galeria.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/subir.css">
+    <link rel="stylesheet" href="css/redes.css">
+
+    <!-- JS link -->
+    <script src="js/script.js"></script>
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/7f5269cfd1.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    </style>
+
+</head>
+<body id="cuerpo">
+
+    <!-- Botón subir -->
+    <div id="subir">
+
+        <a href="#inicio"><i class="fa-solid fa-caret-up"></i></a>
+
+    </div>
+
+    <!-- Redes -->
+    <div id="redes">
+
+        <div id="facebook">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+        
+
+        <div id="twitter">
+            <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        
+        <div id="youtube">
+            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+
+    </div>
+
+    <!-- Header -->
+    <header id="barra" class="c-header">
+
+        <a href="#inicio" id="logo">
+            <img src="https://miguelpallin.com/Javascript%20and%20Jquery%20-%20Sesion%2006(Examen%20Parcial.)/img/logo.png" alt="">
+        </a>
+
+        <!-- Menú Hamburguesa -->
+        <div class="menu" id="menu" onclick="llamar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <nav class="botonera" id="botonera">
+            <ul>
+                <li><a href="#inicio" onclick="llamar()">INICIO</a></li>
+                <li><a href="#nosotros" onclick="llamar()">NOSOTROS</a></li>
+                <li><a href="#galeriascroll" onclick="llamar()">GALERÍA</a></li>
+                <li><a href="#contacto" onclick="llamar()">CONTACTO</a></li>
+                <li><a href="login.html"><i class="fa-solid fa-user"></i> LOGIN</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main id="inicio">
+
+        <div id="main-capa">
+
+            <div id="main-cent">
+
+                <h1>Clínica Dental Centro</h1>
+
+                <p>Más de 10 años de experiencia. Ofrecemos a nuestros pacientes confianza, con tratamientos modernos y especializados.</p>    
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <article id="nosotros">
+
+        <h2>Clínica Dental Centro</h2>
+
+        <hr>
+
+        <p>Somos un equipo de cirujanos dentistas especializados, con más de 10 años de experiencia. Ofrecemos a nuestros pacientes confianza, con tratamientos modernos y especializados en todas nuestras áreas, para el cuidado de su salud dental y estética. Nuestros clientes son, para nosotros, lo más importante.</p>
+
+        <img src="https://miguelpallin.com/Javascript%20and%20Jquery%20-%20Sesion%2006(Examen%20Parcial.)/img/cuidados.jpg" alt="">
+
+    </article>
+
+    <aside>
+
+        <div id="aside-capa">
+
+            <div id="aside-cent">
+
+                <h1>Ven y te atenderemos con lo mejor.</h1>
+
+                <p>Especialidad dedicada a devolver la función masticatoria, restaurar y/o devolver la pérdida de dientes a través del uso de prótesis fija, removiblee e implantes para lo mejor de tu dentadura en el mundo.</p>
+    
+            </div>
+
+        </div>
+
+    </aside>
+
+    <div id="galeriascroll"></div>
+
+    <article id="galeria">
+
+        <div id="galeria-texto">
+
+            <h2>Lo mejor para las sonrisas de nuestros clientes.</h2>
+
+            <hr>
+    
+            <p>Ofrecer servicios de excelencia: Para lograr esto hemos diseñado un modelo de servicio diferenciado, basado en una cultura de tratamientos perfectos, disciplina, profesionalismo y diagnósticos acertados, logrando así la total satisfacción de nuestros pacientes.</p>    
+
+        </div>
+
+        <div id="galeria-img">
+
+            <button class="fa-solid fa-chevron-left" onclick="atras()"></button>
+
+            <img src="imagenes/img01.jpg" id="imagen" alt="">
+
+            <button class="fa-solid fa-chevron-right" onclick="adelante()"></button>
+
+        </div>
+
+    </article>
+
+    <article id="contacto">
+
+        <h2>Contáctanos</h2>
+
+        <hr>
+
+        <div id="cont-flex">
+
+            <div id="cont-text">
+
+                <h3>Ubícanos en:</h3>
+
+                <ul>
+                    <li><p>Calle La Calle, frente a la Calle.</p></li>
+                    <li><p>Teléfono: (01) 643-8934</p></li>
+                    <li><p>Celular: 916 218 454</p></li>
+                    <li><p>Info: dental@center.com</p></li>
+                </ul>
+
+            </div>
+
+            <div id="cont-box">
+
+                <h1>Déjanos un mensaje</h1>
+
+                <form action="">
+
+                    <p>Apellidos y Nombres</p>
+                    <input type="text" name="" id="form-nom" maxlength="80" placeholder="Ingrese su nombre completo" required>
+
+                    <p>Correo Electrónico</p>
+                    <input type="email" name="" id="form-mail" maxlength="100" placeholder="Ingrese su correo electrónico" required>
+
+                    <p>Número Telefónico</p>
+                    <input type="text" id="form-tel" placeholder="Ingrese su número telefónico" maxlength="26" oninput="this.value = this.value.replace(/[^0-9+ ]/g, '').replace(/(\..*?)\..*/g, '$1');">
+
+                    <p>Consulta</p>
+                    <textarea name="" id="form-cons" cols="30" rows="10" maxlength="750" required></textarea>
+
+                    <br>
+
+                    <input type="submit" value="Enviar">
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </article>
+
+    <article id="mapa">
+
+        <h2>Nuestro mapa</h2>
+
+        <hr>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1555953.3677298946!2d-74.307571!3d40.387326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb14cd13e5bb0b9ca!2sOld%20Bridge%20Dental%20Center!5e0!3m2!1ses-419!2spe!4v1665597889844!5m2!1ses-419!2spe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </article>
+
+    <!-- Footer -->
+    <footer id="principal">
+
+        <div class="foot-bloq" id="primero">
+
+            <img src="https://miguelpallin.com/Javascript%20and%20Jquery%20-%20Sesion%2006(Examen%20Parcial.)/img/logo.png" alt="">
+
+            <p>Dental Centro 2022</p>
+
+            <h1>Síguenos en:</h1>
+
+            <div id="foot-red">
+
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+
+            </div>
+
+        </div>
+
+        <div class="foot-bloq" id="foot-medio">
+
+            <h1>HORARIO DE ATENCIÓN</h1>
+
+            <hr>
+
+            <p>
+                Todos los Días - 9:00 am - 9:00pm
+                <br>
+                Lunes a Viernes - 9:00 am - 9:00pm
+                <br>
+                Sábados y Domingos - 9:00 am - 5:00pm
+            </p>
+
+        </div>
+
+        <div class="foot-bloq">
+
+            <h1>CONTÁCTANOS EN:</h1>
+
+            <hr>
+
+            <ul>
+                <li><p>Los Portales, frente a la Universidad Universo, cuadra 15 de la Avenida Rosales.</p></li>
+                <li><p>WhatsApp: 916 218 454</p></li>
+                <li><p>Email: dental@center.com</p></li>
+            </ul>
+
+        </div>
+
+    </footer>
+
+    <footer id="secun">
+
+        <p>Creado por Marcello Melofiro</p>
+
+    </footer>
+    
+</body>
+</html>

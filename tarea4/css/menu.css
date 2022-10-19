@@ -1,0 +1,60 @@
+#menu{
+    display: none;
+}
+
+/* Media Query */
+@media only screen and (max-width: 800px){
+
+    #menu{
+        display: block;
+        float: right;
+        margin: 10px;
+        font-size: 24px;
+        color: var(--blan);
+        cursor: pointer;
+        transform: translate(0, 19%);
+    }
+
+    .botonera{
+        display: block;
+        position: fixed;
+        left: 100%;
+        
+        top: 59px;
+        bottom: 0;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        width: 105vw;
+        transition: 0.5s ease-out;
+        background: var(--azul);
+        z-index: 1000000000000000000000;
+
+        transform: translate(0);
+    }
+
+    .botonera-open{
+        left: -5%;
+    }
+
+    .botonera ul{
+        flex-direction: column;
+        
+        text-align: center;
+    }
+
+    .botonera a{
+        padding: 30px;
+        display: block;
+    }
+
+    .header-cambio{
+        background-color: var(--azul);
+        transition: 0.5s ease-in-out;
+    }
+
+    .cuerpofixed{
+        /* position: fixed; */
+        overflow: hidden;
+    }
+
+}

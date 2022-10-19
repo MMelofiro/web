@@ -1,0 +1,22 @@
+#inicio{
+    height: 100vh;
+    background: url(../imagenes/banner.jpg) center no-repeat;
+    background-size: cover;
+}
+
+#main-capa{
+    background: rgba(77, 149, 190, 0.5);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-cent{
+    text-align: center;
+    color: var(--blan);
+}
+
+#main-cent h1{
+    margin: 0 0 10px;
+}

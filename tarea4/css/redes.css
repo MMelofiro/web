@@ -1,0 +1,67 @@
+#redes{
+    position: fixed;
+    z-index: 99999;
+    top: 30%;
+    left: 0;
+}
+
+#facebook a{
+    font-size: 1.2rem;
+    color: white;
+    background-color: var(--azul);
+    text-decoration: none;
+    padding: 10px 15px 10px 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+#facebook a:hover{
+    padding: 10px 20px;
+    background-color: #3C5A9A;
+    transition: all 0.5s ease-in-out;
+}
+
+#twitter{
+    transform: translate(0, 84%);
+}
+
+#twitter a{
+    font-size: 1.2rem;
+    color: white;
+    background-color: var(--azul);
+    text-decoration: none;
+    padding: 10px 11.4px;
+    transition: all 0.5s ease-in-out;
+}
+
+#twitter a:hover{
+    padding: 10px 16.4px;
+    background-color: #008DEF;
+    transition: all 0.5s ease-in-out;
+}
+
+#youtube{
+    transform: translate(0, 168%);
+}
+
+#youtube a{
+    font-size: 1.2rem;
+    color: white;
+    background-color: var(--azul);
+    text-decoration: none;
+    padding: 10px 10.2px;
+    transition: all 0.5s ease-in-out;
+}
+
+#youtube a:hover{
+    padding: 10px 15.2px;
+    background-color: #FE0000;
+    transition: all 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 800px){
+
+    #redes{
+        display: none;
+    }
+
+}

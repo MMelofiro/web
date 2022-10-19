@@ -1,0 +1,26 @@
+#subir{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+#subir i{
+    background-color: var(--celes);
+    color: var(--blan);
+    padding: 10px 20px;
+    border-radius: 100%;
+    font-size: 3rem;
+}
+
+#subir i:hover{
+    background-color: var(--resalt);
+}
+
+@media only screen and (max-width: 800px){
+
+    #subir i{
+        padding: 7px 14px;
+        font-size: 2.5rem;
+    }
+
+}
