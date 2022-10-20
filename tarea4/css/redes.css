@@ -1,6 +1,6 @@
 #redes{
     position: fixed;
-    z-index: 99999;
+    z-index: 10;
     top: 30%;
     left: 0;
 }

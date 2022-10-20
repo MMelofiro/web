@@ -1,3 +1,11 @@
+/* Preloader */
+setTimeout(function(){
+    let preloader=document.querySelector(".preloader")
+    let cuerpo=document.getElementById("cuerpo");
+    preloader.style.visibility="hidden";
+    cuerpo.style.overflow="scroll";
+}, 700)
+
 /* Menú hamburguesa */
 function llamar(){
     let botonera=document.getElementById("botonera");
