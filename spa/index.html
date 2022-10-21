@@ -1,1 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA</title>
 
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/galeria.css">
+    <link rel="stylesheet" href="css/subir.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/testimonios.css">
+    <link rel="stylesheet" href="css/contactos.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!-- Fontawesome kit -->
+    <script src="https://kit.fontawesome.com/7f5269cfd1.js" crossorigin="anonymous"></script>
+  
+</head>
+<body id="cuerpo" style="overflow: hidden;">
+
+    <div id="preloader">
+
+        <img src="img/preloader.gif" alt="">
+
+    </div>
+
+    <div id="inicio"></div>
+
+    <header id="header">
+
+        <div class="container">
+
+            <div id="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+
+            <!-- Menu Hamburguesa -->
+            <div class="menu" id="menu" onclick="llamar()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- Fin Menu Hamburguesa -->
+
+            <nav class="botonera" id="botonera">
+
+                <ul>
+                    <li><a href="#inicio" class="active">INICIO</a></li>
+                    <li><a href="#nosotros">NOSOTROS</a></li>
+                    <li><a href="#galeria">GALERIA</a></li>
+                    <li><a href="#contactos">CONTACTOS</a></li>
+                </ul>
+                
+            </nav>
+
+        </div>
+
+    </header>
+
+    <script>
+        let enlaces=document.querySelectorAll(".botonera a");
+        enlaces.forEach((element) => {
+            element.addEventListener("click", (event) => {
+                enlaces.forEach((link) => {
+                    link.classList.remove("active");
+                })
+                event.target.classList.add("active");
+            })
+        })
+    </script>
+    
+    <div class="banner">
+
+        <div class="overlay">
+
+            <div class="cont-banner">
+
+                <h2>SPA CAOH</h2>
+
+                <p>Ven y Relajate con Nosotros</p>
+                
+                <button id="button" onclick="alert('Gracias por Suscribirse');">Suscribirse</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Botón subir -->
+    <a class="fa-solid fa-angle-up" id="subir" href="#inicio"></a>
+   
+    <main id="nosotros">
+
+        <h3>Nosotros</h3>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorem at quasi quia esse nisi repudiandae tenetur fuga mollitia exercitationem pariatur similique, a nam animi magnam perspiciatis minima ex fugit!
+        Officiis quia omnis eos qui velit ab. Molestias placeat nobis explicabo magnam quas aliquam quaerat architecto, amet rem excepturi enim. Natus eaque nulla numquam iusto ipsam unde repellat dicta assumenda.
+        Placeat, dignissimos veniam! Deserunt veniam doloremque libero possimus officia, rem voluptas aliquam facere dolore vel voluptatibus est ipsa quidem laborum sit recusandae sed iste voluptate nam aut? Cupiditate, eaque vero.</p>
+        
+        <img src="img/spa00.jpg" alt="" class="img-responsive">
+
+    </main>
+
+    <!-- Testimonios -->
+    <div class="fondo-testimonios">
+
+        <h2 class="text-testimonios">Nuestros Clientes</h2>
+
+        <div class="testimonios">
+
+            <aside>
+
+                <img src="img/jennifer.jpg" alt="" class="img-testimonios" name="slider">
+
+            </aside>
+
+            <aside style="align-self:center; color:white;">
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis est, voluptatum deleniti voluptates doloribus ex optio at sint? Eum nam natus velit necessitatibus, est ipsa quaerat omnis officiis alias vitae!
+                Nemo asperiores neque eaque reiciendis sunt dolores, blanditiis harum totam omnis explicabo corporis vitae culpa voluptatibus animi natus eos. Nobis reprehenderit totam error voluptate cupiditate nisi itaque molestias qui officia?</p>
+
+            </aside>
+
+        </div>
+
+    </div>
+    
+    <div class="galeria" id="galeria">
+
+        <h2 class="text-galeria">NUESTRA GALERÍA</h2>
+
+        <section>
+
+            <article>
+
+                <h3>Nuestra Galería</h3>
+
+                <hr class="linea">
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptas facere, vitae non natus omnis aliquam ullam veniam, atque unde ipsum dolore numquam sapiente vel adipisci blanditiis quidem velit maiores?</p>
+
+            </article>
+
+            <article style="display:flex; align-items: center;" >
+
+                <button class="btn fa-solid fa-angle-left" onclick="atras()"></button>
+
+                <img src="img/spa01.jpg" alt="" class="img-article" id="img">
+
+                <button class="btn fa-solid fa-angle-right" onclick="adelante()"></button>
+
+            </article>
+
+        </section>
+
+    </div>
+
+    <!--Hoja de Contactos-->
+    <div class="fondo-contactos" id="contactos">
+        <h2 class="text-contactos">CONTÁCTANOS</h2>
+        <div class="contactos">
+            <div class="contact">
+                <h2>NUESTRAS SEDES</h2>
+                <ul class="listas">
+                    <li>Arequipa</li>
+                    <li>Cajamarca</li>
+                    <li>Trujillo</li>
+                    <li>Piura</li>
+                    <li>Tumbes</li>
+                    <li>Puno</li>
+                    <li>Cuzco</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <div class="formulario">
+                    <h2>Dejanos un Mensaje</h2>
+                    <form action="">
+                        <p>Apellidos y Nombres</p>
+                        <input type="text" name="" id="" placeholder="Ingresa tus Apellidos y Nombres">
+                        <br>
+                        <p>Correo Electronico</p>
+                        <input type="email" name="" id="" placeholder="Ingresa tu Correo Electronico">
+                        <br>
+                        <p>Celular</p>
+                        <input type="number" name="" id="" placeholder="Ingresa tu Celular">
+                        <br>
+                        <p>Comentarios</p>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <br>
+                        <input type="submit" value="ENVIAR">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer de la Pêgina Web-->
+    <div class="fondo-footer">
+
+        <div class="footer">
+
+            <footer>
+
+                <img src="img/logo.png" alt="" width="180px">
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, dolor?</p>
+
+            </footer>
+
+            <footer>
+
+                <h2>Nuestros Auspiciadores</h2>
+
+                <ul class="listas">
+
+                    <li>UTP</li>
+                    <li>Miguel Pallin</li>
+                    <li>Instituto IDAT.</li>
+                    <li>Tecnologia Zero</li>
+
+                </ul>
+
+            </footer>
+
+            <footer>
+
+                <h2>Visitanos en Nuestras Redes:</h2>
+
+                <div class="redes">
+
+                    <i class="ico fa-brands fa-youtube"></i>
+                    <i class="ico fa-brands fa-facebook"></i>
+                    <i class="ico fa-brands fa-instagram"></i>
+                </div>
+
+            </footer>
+
+        </div>
+
+    </div>
+
+    <div class="fondo-pie">
+
+        <div class="pies">
+
+            <div class="pie">
+
+                <p>Creado y Desarrollado por Tecnologia Zero.</p>
+
+            </div>
+
+            <div class="pie">
+
+                <p>Todos los Derechos Reservados al Insituto IDAT.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Link JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

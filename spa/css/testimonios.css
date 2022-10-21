@@ -1,0 +1,30 @@
+.fondo-testimonios{
+    background-color: purple;
+    padding: 10px 0;
+}
+
+.text-testimonios{
+    text-align: center;
+    margin: 0 0 10px 0;
+    color: yellow;
+}
+
+.testimonios{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+aside{
+    width: 350px;
+    margin: 0 0 10px 0;
+}
+
+.img-testimonios{
+    width: 350px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid yellow;
+}

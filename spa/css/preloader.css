@@ -1,0 +1,17 @@
+#preloader{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    text-align: center;
+    position: fixed;
+    z-index: 10000000000;
+
+    visibility: visible;
+}
+
+#preloader img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

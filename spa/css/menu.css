@@ -1,0 +1,41 @@
+#menu{
+    display: none;
+}
+
+.active{
+    background: black;
+    height: 70px;
+}
+
+/* Media Query */
+@media only screen and (max-width: 980px){
+
+    #menu{
+        display: block;
+        float: right;
+        margin: 10px;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .botonera{
+        float: none;
+        left: -150%;
+        position: relative;
+        transition: 0.5s ease-in-out;
+    }
+
+    .botonera-open{
+        left: 0%;
+    }
+
+    .botonera ul{
+        top: 70px;
+        flex-direction: column;
+        width: 100%;
+        background-color: black;
+        position: absolute;
+    }
+
+}

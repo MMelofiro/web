@@ -1,0 +1,51 @@
+.galeria{
+    margin: 20px 0px;
+
+    scroll-margin-block-start: 90px;
+}
+
+.text-galeria{
+    text-align: center;
+    margin: 0 0 10px;
+}
+
+section{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+article{
+    width: 350px;
+}
+
+.img-article{
+    width: 100%;
+}
+
+/* Media query */
+@media only screen and (max-width: 980px){
+
+    section{
+        width: 90%;
+    }
+
+    article{
+        width: 45%;
+    }
+
+}
+
+@media only screen and (max-width: 480px){
+
+    section{
+        width: 95%;
+    }
+
+    article{
+        width: 100%;
+    }
+    
+}
