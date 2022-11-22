@@ -1,0 +1,16 @@
+.bienvenida h1, h2, h3, h4, h5, h6{
+    color: var(--bl);
+}
+
+.bienvenida p, .bienvenida li, .somos p, .mision p{
+    text-align: justify;
+    font-size: 1.2rem;
+    color: var(--gr);
+    font-weight: 500;
+    line-height: 2.4rem;
+    list-style-image: url(../img/vineta.png);
+}
+
+.somos img{
+    margin: 0 auto;
+}

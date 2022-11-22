@@ -1,0 +1,8 @@
+.container li, h1{
+    color: var(--bl);
+}
+
+.container li{
+    font-size: 1.2rem;
+    list-style-image: url(../img/vineta.png);
+}

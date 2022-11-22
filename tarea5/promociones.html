@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Servicios Turísticos</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://miguelpallin.com/Javascript%20and%20Jquery%20-%20Sesion%2012(Examen%20Final.)/img/favicon.png" type="image/x-icon">
+
+    <!-- CDN BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- CDN FontAwesome -->
+    <script src="https://kit.fontawesome.com/7f5269cfd1.js" crossorigin="anonymous"></script>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/promo.css">
+
+</head>
+
+<body>
+
+    <!-- Barra de Navegación -->
+    <nav class=" navbar navbar-expand-lg navbar-dark fixed-top">
+
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" width="110px" alt="">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarNavDropdown">
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="promociones.html">Promociones</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Servicios
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li><a class="dropdown-item" href="traslados.html">Traslados</a></li>
+
+                            <li><a class="dropdown-item" href="guia.html">Guía de Trabajo</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            City Tours
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li><a class="dropdown-item" href="tours_lima.html">City Tours Lima</a></li>
+
+                            <li><a class="dropdown-item" href="lima_paracas.html">Lima y Paracas</a></li>
+
+                            <li><a class="dropdown-item" href="lima_ica.html">Lima - Paracas e Ica</a></li>
+
+                            <li><a class="dropdown-item" href="lima_nazca.html">Lima - Paracas - Ica y Nazca</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galería de Fotos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactenos.html">Contáctenos</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- Margen -->
+    <h1>Promociones</h1>
+
+    <!-- Contenido de la página -->
+    <main>
+
+        <div class="container my-5">
+
+            <h1 class="text-center">Nuestras Promociones</h1>
+
+            <aside class="blocks row">
+
+                <div class="tarjeta col-lg-3 col-md-6 mt-5">
+
+                    <div class="carta">
+
+                        <button class="carta-boton" type="button" data-bs-toggle="modal" data-bs-target="#lima">
+                            <div class="card">
+                                <img src="img/promo/lima.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">City Tour Lima</h5>
+                                    <hr>
+                                    <a href="#" class="btn btn-primary">Más Información</a>
+                                </div>
+                            </div>
+                        </button>
+
+                        <a href="contactenos.html" class="reserve mt-4 justify-content-center">
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                            &NonBreakingSpace;
+                            <p>Reserve Ya</p>
+                        </a>
+    
+                    </div>
+    
+                </div>
+
+                <div class="tarjeta col-lg-3 col-md-6 mt-5">
+
+                    <div class="carta">
+
+                        <button class="carta-boton" type="button" data-bs-toggle="modal" data-bs-target="#paracas">
+                            <div class="card">
+                                <img src="img/promo/lima_paracas.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tour Lima y Paracas</h5>
+                                    <hr>
+                                    <a href="#" class="btn btn-primary">Más Información</a>
+                                </div>
+                            </div>
+                        </button>
+
+                        <a href="contactenos.html" class="reserve mt-4 justify-content-center">
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                            &NonBreakingSpace;
+                            <p>Reserve Ya</p>
+                        </a>
+    
+                    </div>
+    
+                </div>
+
+                <div class="tarjeta col-lg-3 col-md-6 mt-5">
+
+                    <div class="carta">
+
+                        <button class="carta-boton" type="button" data-bs-toggle="modal" data-bs-target="#ica">
+                            <div class="card">
+                                <img src="img/promo/lima_paracas_ica.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tour Lima - Paracas e Ica</h5>
+                                    <hr>
+                                    <a href="#" class="btn btn-primary">Más Información</a>
+                                </div>
+                            </div>
+                        </button>
+
+                        <a href="contactenos.html" class="reserve mt-4 justify-content-center">
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                            &NonBreakingSpace;
+                            <p>Reserve Ya</p>
+                        </a>
+    
+                    </div>
+    
+                </div>
+
+                <div class="tarjeta col-lg-3 col-md-6 mt-5">
+
+                    <div class="carta">
+
+                        <button class="carta-boton" type="button" data-bs-toggle="modal" data-bs-target="#nazca">
+                            <div class="card">
+                                <img src="img/promo/lima_paracas_ica_nazca.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lima, Ica, Paracas, Nazca</h5>
+                                    <hr>
+                                    <a href="#" class="btn btn-primary">Más Información</a>
+                                </div>
+                            </div>
+                        </button>
+
+                        <a href="contactenos.html" class="reserve mt-4 justify-content-center">
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                            &NonBreakingSpace;
+                            <p>Reserve Ya</p>
+                        </a>
+    
+                    </div>
+    
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+    <!-- Modal Cards -->
+    <!-- Lima -->
+    <div class="modal fade " id="lima" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">City Tour Lima</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <p>Lima, la Ciudad de los Reyes alberga el centro histórico de la ciudad y una gran cantidad de construcciones pre inca, colonial y moderno. Nuestro tour te permitirá recorrer todos esos lugares y revivir la historia.</p>
+
+                    <h4>Precio $35</h4>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="contactenos.html" class="btn btn-primary">Reservar Ahora</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Paracas -->
+    <div class="modal fade " id="paracas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Lima - Paracas</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <p>Disfrute de una emocionante aventura llena de adrenalina en una excursión de día completo desde Lima para visitar la ciudad de Paracas, donde podrán visitar las islas ballestas de la reserva de paracas.</p>
+
+                    <h4>Desde $350</h4>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="contactenos.html" class="btn btn-primary">Reservar Ahora</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+      
+    <!-- Ica -->
+    <div class="modal fade " id="ica" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Lima - Ica - Paracas</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <p>Disfrute de una emocionante aventura llena de adrenalina y cultura en una excursión de día completo desde Lima para visitar la ciudad de Paracas, continuaremos el viaje a la HUACACHINA un oasis en el desierto costero, de ICA rodeado de miles de kilómetros de arena donde podrán hacer Sand Boarding, Finalizando la visita en los viñedos para degustar el famoso pisco y vinos que se elaboran en la región.</p>
+
+                    <h4>Desde $400</h4>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="contactenos.html" class="btn btn-primary">Reservar Ahora</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Nazca -->
+    <div class="modal fade " id="nazca" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Lima - Paracas - Ica - Nazca</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <p>Disfrute de una emocionante aventura llena de adrenalina en una excursión de día completo desde Lima para visitar la ciudad de Paracas, el desierto costero, el oasis más espectacular de américa, el desierto de Huacachina, viñedos y las famosas figuras enigmáticas (líneas de nazca).</p>
+
+                    <h4>Desde $480</h4>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="contactenos.html" class="btn btn-primary">Reservar Ahora</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-5">
+
+        <div class="redes">
+
+            <a href="https://facebook.com" class="fa-stack fa-2x">
+                <i class="fa-solid fa-circle fa-stack-2x"></i>
+                <i class="fa-brands fa-facebook-f fa-stack-1x fa-inverse"></i>
+            </a>
+
+            <a href="https://youtube.com" class="fa-stack fa-2x">
+                <i class="fa-solid fa-circle fa-stack-2x"></i>
+                <i class="fa-brands fa-youtube fa-stack-1x fa-inverse"></i>
+            </a>
+
+            <a href="https://linkedin.com" class="fa-stack fa-2x">
+                <i class="fa-solid fa-circle fa-stack-2x"></i>
+                <i class="fa-brands fa-linkedin-in fa-stack-1x fa-inverse"></i>
+            </a>
+
+            <a href="https://whatsapp.com" class="fa-stack fa-2x">
+                <i class="fa-solid fa-circle fa-stack-2x"></i>
+                <i class="fa-brands fa-whatsapp fa-stack-1x fa-inverse"></i>
+            </a>
+
+        </div>
+
+        <div class="direccion">
+
+            <div class="dir-blo">
+
+                <p>Avenida Avenida Calle 420, Lima, Perú.</p>
+
+            </div>
+
+            <div class="dir-blo">
+
+                <p>Cel: 961 923 339<br>
+                    Tel: (01) 362-1250 </p>
+
+            </div>
+
+            <div class="dir-blo">
+
+                <p>Correo Electrónico:<br>
+                    aurili@informes.com</p>
+
+            </div>
+
+            <div class="dir-blo">
+
+                <i class="fa-solid fa-book-open"></i>
+
+                <p>Libro de Reclamaciones</p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- CDN Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</body>
+</html>

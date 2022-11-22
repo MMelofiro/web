@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Servicios Turísticos</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://miguelpallin.com/Javascript%20and%20Jquery%20-%20Sesion%2012(Examen%20Final.)/img/favicon.png" type="image/x-icon">
+
+    <!-- CDN BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- CDN FontAwesome -->
+    <script src="https://kit.fontawesome.com/7f5269cfd1.js" crossorigin="anonymous"></script>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/traslados.css">
+
+    
+
+</head>
+
+<body>
+
+    <!-- Barra de Navegación -->
+    <nav class=" navbar navbar-expand-lg navbar-dark fixed-top">
+
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" width="110px" alt="">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarNavDropdown">
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="promociones.html">Promociones</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Servicios
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li><a class="dropdown-item active" href="traslados.html">Traslados</a></li>
+
+                            <li><a class="dropdown-item" href="guia.html">Guía de Trabajo</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            City Tours
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li><a class="dropdown-item" href="tours_lima.html">City Tours Lima</a></li>
+
+                            <li><a class="dropdown-item" href="lima_paracas.html">Lima y Paracas</a></li>
+
+                            <li><a class="dropdown-item" href="lima_ica.html">Lima - Paracas e Ica</a></li>
+
+                            <li><a class="dropdown-item" href="lima_nazca.html">Lima - Paracas - Ica y Nazca</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galería de Fotos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactenos.html">Contáctenos</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- Margen -->
+    <h1>TRASLADOS</h1>
+
+    <!-- Contenido de la página -->
+    <!-- Acordeón -->
+    <main>
+
+        <div class="container">
+
+            <div class="accordion accordion-flush my-5" id="accordionFlushExample">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#traslados" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Traslados
+                        </button>
+                    </h2>
+                    <div id="traslados" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Traslados USD (No incluye IGV)</th>
+                                        <th scope="col">1-5 packs</th>
+                                        <th scope="col">6-10 packs</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="table-group-divider">
+                                        <th scope="row">1</th>
+                                        <td>Aeropuerto / Lima Cercado, San Isidro, Miraflores (o viceversa)</td>
+                                        <td>37</td>
+                                        <td>80</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Aeropuerto / Cruz del sur (Javier Prado) (o viceversa)</td>
+                                        <td>37</td>
+                                        <td>80</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Puerto del Callao / Lima Cercado, San Isidro, Miraflores, Barranco</td>
+                                        <td>37</td>
+                                        <td>80</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>Puerto del Callao / Aeropuerto</td>
+                                        <td>37</td>
+                                        <td>80</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>Estacion Cruz del sur (Javier Prado) / Lima Cercado, San Isidro, Miraflores (viceversa)</td>
+                                        <td>37</td>
+                                        <td>80</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#lima" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Tours en Lima
+                        </button>
+                    </h2>
+                    <div id="lima" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Tours en Lima USD (No incluye IGV)</th>
+                                        <th scope="col">1-5 packs</th>
+                                        <th scope="col">6-10 packs</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="table-group-divider">
+                                        <th scope="row">1</th>
+                                        <td>Restaurant - Lima Cercado, San Isidro, Miraflores (3 hrs.)</td>
+                                        <td>65</td>
+                                        <td>90</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Museo (3 hrs.)</td>
+                                        <td>65</td>
+                                        <td>90</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Pachacamac (3 1/2 hrs.)</td>
+                                        <td>65</td>
+                                        <td>90</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#adicionales" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Adicionales
+                        </button>
+                    </h2>
+                    <div id="adicionales" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Adicionales USD (No incluye IGV)</th>
+                                        <th scope="col">1-5 packs</th>
+                                        <th scope="col">6-10 packs</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="table-group-divider">
+                                        <th scope="row">1</th>
+                                        <td>Hora a disposicion (Tarifa por hora, minimo 4 horas). Hora Adicional (desde una hora).</td>
+                                        <td>20</td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Guía</td>
+                                        <td>50</td>
+                                        <td>70</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Full Day
+                        </button>
+                    </h2>
+                    <div id="day" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Full Day USD (No incluye IGV)</th>
+                                        <th scope="col">1-5 packs</th>
+                                        <th scope="col">6-10 packs</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="table-group-divider">
+                                        <th scope="row">1</th>
+                                        <td>Caral</td>
+                                        <td>350</td>
+                                        <td>500</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Paracas</td>
+                                        <td>350</td>
+                                        <td>500</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Lunahuana</td>
+                                        <td>350</td>
+                                        <td>500</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>Paracas - Ica</td>
+                                        <td>400</td>
+                                        <td>550</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Cartas -->
+        <div class="container">
+
+            <h2 class="text-center">TRASLADOS</h2>
+
+            <div class="row mb-5">
+
+                <div class="col-lg-3 col-md-6 mt-4">
+
+                    <div class="carta card text-bg-dark">
+                        <img src="img/servicios/miraflores.jpg" class="card-img" alt="">
+                        <div class="card-img-overlay">
+                            <h3 id="ti-a" class="card-title">Privado</h3>
+                            <p id="big-a" class="card-text big">Traslado</p>
+                            <p id="small-a" class="card-text small">Desde $25</p>
+                            <img src="img/servicios/auto01.png" alt="" class="imagen">
+                        </div>
+                    </div>
+
+                    <a href="contactenos.html" class="reserve mt-4 justify-content-center">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        &NonBreakingSpace;
+                        <p>Reserve Ya</p>
+                    </a>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 mt-4">
+
+                    <div class="carta card text-bg-dark">
+                        <img src="img/servicios/jiron.jpg" class="card-img" alt="">
+                        <div class="card-img-overlay">
+                            <h3 id="ti-b" class="card-title">Privado</h3>
+                            <p id="big-b" class="card-text big">Traslado</p>
+                            <p id="small-b" class="card-text small">Desde $25</p>
+                            <img src="img/servicios/auto02.png" alt="" class="imagen-b">
+                        </div>
+                    </div>
+
+                    <a href="contactenos.html" class="reserve mt-4 justify-content-center">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        &NonBreakingSpace;
+                        <p>Reserve Ya</p>
+                    </a>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 mt-4">
+
+                    <div class="carta card text-bg-dark">
+                        <img src="img/servicios/costa_verde.jpg" class="card-img" alt="">
+                        <div class="card-img-overlay">
+                            <h3 id="ti-c" class="card-title">Privado</h3>
+                            <p id="big-c" class="card-text big">Traslado</p>
+                            <p id="small-c" class="card-text small">Desde $25</p>
+                            <img src="img/servicios/auto03.png" alt="" class="imagen-c">
+                        </div>
+                    </div>
+
+                    <a href="contactenos.html" class="reserve mt-4 justify-content-center">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        &NonBreakingSpace;
+                        <p>Reserve Ya</p>
+                    </a>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 mt-4">
+
+                    <div class="carta card text-bg-dark">
+                        <img src="img/servicios/ica_sur.jpg" class="card-img" alt="">
+                        <div class="card-img-overlay">
+                            <h3 id="ti-d" class="card-title">Privado</h3>
+                            <p id="big-d" class="card-text big">Traslado</p>
+                            <p id="small-d" class="card-text small">Desde $25</p>
+                            <img src="img/servicios/auto01.png" alt="" class="imagen">
+                        </div>
+                    </div>
+
+                    <a href="contactenos.html" class="reserve mt-4 justify-content-center">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        &NonBreakingSpace;
+                        <p>Reserve Ya</p>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="py-5">
+
+        <div class="redes">
+
+            <a href="https://facebook.com" class="fa-stack fa-2x">
+                <i class="fa-solid fa-circle fa-stack-2x"></i>
+                <i class="fa-brands fa-facebook-f fa-stack-1x fa-inverse"></i>
+            </a>
+
+            <a href="https://youtube.com" class="fa-stack fa-2x">
+                <i class="fa-solid fa-circle fa-stack-2x"></i>
+                <i class="fa-brands fa-youtube fa-stack-1x fa-inverse"></i>
+            </a>
+
+            <a href="https://linkedin.com" class="fa-stack fa-2x">
+                <i class="fa-solid fa-circle fa-stack-2x"></i>
+                <i class="fa-brands fa-linkedin-in fa-stack-1x fa-inverse"></i>
+            </a>
+
+            <a href="https://whatsapp.com" class="fa-stack fa-2x">
+                <i class="fa-solid fa-circle fa-stack-2x"></i>
+                <i class="fa-brands fa-whatsapp fa-stack-1x fa-inverse"></i>
+            </a>
+
+        </div>
+
+        <div class="direccion">
+
+            <div class="dir-blo">
+
+                <p>Avenida Avenida Calle 420, Lima, Perú.</p>
+
+            </div>
+
+            <div class="dir-blo">
+
+                <p>Cel: 961 923 339<br>
+                    Tel: (01) 362-1250 </p>
+
+            </div>
+
+            <div class="dir-blo">
+
+                <p>Correo Electrónico:<br>
+                    aurili@informes.com</p>
+
+            </div>
+
+            <div class="dir-blo">
+
+                <i class="fa-solid fa-book-open"></i>
+
+                <p>Libro de Reclamaciones</p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- CDN Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <!-- Link JavaScript -->
+    <script src="js/traslados.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+.container h1, .container p{
+    color: var(--bl);
+}
+
+textarea{
+    height: 300px;
+}
+
+input[type="submit"]{
+    width: 100%;
+    background-color: var(--main);
+    color: var(--whi);
+}
+
+input[type="submit"]:hover{
+    background-color: var(--res);
+}
+
+.col-lg-6 ul li{
+    color: var(--bl);
+    font-size: 1.2rem;
+    line-height: 2rem;
+    list-style-image: url(../img/vineta.png);
+}

@@ -16,7 +16,7 @@
 
     <!-- Link CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contactenos.css">
 
 </head>
 
@@ -40,7 +40,7 @@
                 <ul class="navbar-nav">
 
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
                     </li>
 
                     <li class="nav-item">
@@ -88,7 +88,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="contactenos.html">Contáctenos</a>
+                        <a class="nav-link active" href="contactenos.html">Contáctenos</a>
                     </li>
 
                 </ul>
@@ -99,105 +99,64 @@
 
     </nav>
 
-    <!-- Carrusel de Imágenes -->
-    <div id="carouselExampleIndicators" class="carousel slide mt-5" data-bs-ride="carousel">
+    <!-- Margen -->
+    <h1>CONTACTO</h1>
 
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
+    <!-- Contenido de la página -->
+    <main>
 
-        <div class="carousel-inner">
-
-            <div class="carousel-item active">
-                <img src="img/banner01.png" class="d-block w-100" alt="...">
-            </div>
-
-            <div class="carousel-item">
-                <img src="img/banner02.png" class="d-block w-100" alt="...">
-            </div>
-
-            <div class="carousel-item">
-                <img src="img/banner03.png" class="d-block w-100" alt="...">
-            </div>
-
-        </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-
-    </div>
-
-    <!-- Contenido de la Página -->
-    <main class="bienvenida mt-5">
-
-        <div class="container">
+        <div class="container my-5">
 
             <div class="row">
 
-                <div class="col-lg-8">
+                <div class="col-lg-6">
 
-                    <h1 class="text-center">TRANSPORTE TURÍSTICO EN TODO EL PERÚ</h1>
+                    <h1 class="text-center">Contáctenos</h1>
 
-                    <p>Te damos la bienvenida, amigo turista, y te invitamos a descubrir lugares maravillosos, poniendo el Perú a tu alcance mediante un servicio de calidad basado en nuestra amplia experiencia. AU.RI.LI. Servicios Turísticos se amolda a tus expectativas y te lleva a donde tu lo solicites, asesorándote para que tu viaje sea seguro, cómodo y de plena satisfacción en tu recorrido por nuestro país.</p>
+                    <p>Déjanos tu mensaje y nos comunicaremos contigo.</p>
 
-                    <h3>SERVICIOS OFRECIDOS:</h3>
+                    <form action="enviar.php" method="POST">
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">
+                                <i class="fa-solid fa-user"></i>
+                            </span>
+                            <input type="text" class="form-control" placeholder="Nombre Completo" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+    
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">
+                                <i class="fa-solid fa-at"></i>
+                            </span>
+                            <input type="email" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+    
+                        
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="fa-solid fa-envelope"></i>
+                            </span>
+                            <textarea class="form-control" aria-label="With textarea" placeholder="Mensaje" style="resize: none;"></textarea>
+                        </div>
+
+                        <br>
+
+                        <input type="submit" value="Enviar" class="btn mb-5">
+
+                    </form>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <h1 class="text-center mb-3">Oficinas</h1>
+
+                    <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1278.438227821328!2d-81.46285531855018!3d28.297427124641562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd83ce33815983%3A0xed630e5207932f4c!2sMarcello%20Blvd%2C%20Kissimmee%2C%20FL%2034746%2C%20EE.%20UU.!5e0!3m2!1ses-419!2spe!4v1669152862723!5m2!1ses-419!2spe" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                     <ul>
-                        <li>Traslados del aeropuerto al hotel o domicilio.</li>
-                        <li>Traslados del hotel o domicilio al aeropuerto.</li>
-                        <li>City Tours</li>
-                        <li>Full Days</li>
-                        <li>Full Days</li>
+                        <li>Email: aurili@consultas.com</li>
+                        <li>Tel: 987 654 321 // (01) 654 3210</li>
                     </ul>
-
-                </div>
-
-                <div class="col-lg-4 align-items-center">
-
-                    <img class="w-100 d-flex align-items-center" src="https://miguelpallin.com/Javascript%20and%20Jquery%20-%20Sesion%2012(Examen%20Final.)/img/viajeros.jpg" alt="">
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="somos container mt-5">
-
-            <h2 class="text-center">¿QUIENES SOMOS?</h2>
-
-            <p>Somos una empresa dedicada al servicio de Transporte Especial de Personas bajo la modalidad de servicio de Transporte Turístico de ámbito nacional. Contamos con modernos vehículos full-equipo, conductores profesionales del turismo, permisos y licencias. Nuestros vehículos cuentan con todo la seguridad correspondiente. También brindamos asesoría con respecto a paquetes turísticos a nivel nacional y nos adecuamos a tus necesidades en función a tu disponibilidad de tiempo y a tu economía.</p>
-
-            <img class="w-100 my-5 d-flex justify-items-center" src="https://miguelpallin.com/Javascript%20and%20Jquery%20-%20Sesion%2012(Examen%20Final.)/img/carros.jpg" alt="">
-
-        </div>
-
-        <div class="mision container mb-5">
-
-            <div class="row">
-
-                <div class="col-lg-6">
-
-                    <h2 class="text-center">MISIÓN</h2>
-
-                    <p class="text-center">Brindar nuestro servicio de rransporte rurístico con calidad, puntualidad y seguridad, ajustándonos a las necesidades de nuestros clientes y satisfaciendo sus expectativas.</p>
-
-                </div>
-
-                <div class="col-lg-6">
-
-                    <h2 class="text-center">VISIÓN</h2>
-
-                    <p class="text-center">Ser una empresa peruana líder en el servicio de transporte turístico y/o ejecutivo a nivel nacional; con valores, ética y profesionalismo.</p>
 
                 </div>
 
